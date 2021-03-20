@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Chifoumi</title>
+
+</head>
+<body>
+
+  <header>
+    
+    <div><img src="images/logo.svg" alt="logo">
+    <table>
+      <tr>
+        <td>Victoire</td>
+        <td>Egalite</td>
+        <td>Defaite</td>
+      </tr>
+      <tr>
+        <td id="vic"></td>
+        <td id="egal"></td>
+        <td id="def"></td>
+      </tr>
+    </table>
+  </div>
+  </header>
+
+  <main>
+    
+    <div class="regles hide">
+      <h2>Regles</h2>
+      <img src="images/icon-close.svg" alt="close" class="close">
+      <img src="images/image-rules.svg" alt="rules" ></div>
+
+    <section class="game">
+      <div class="paper"><img src="images/icon-paper.svg" alt="paper"></div>
+      <div class="scissors"><img src="images/icon-scissors.svg" alt="scissors"></div>
+      <div class="rock"><img src="images/icon-rock.svg" alt="rock"></div>
+    </section>
+
+
+    <section class="result hide">
+      <article class="choix">
+        <p>Votre choix :</p>
+        <div id="choixjoueur"><img src="images/icon-scissors.svg" alt="imgchoixjoueur"></div>
+      </article>
+        <article>
+        <p class='resultat'>Resutltat</p>
+        <p class="reload">Rejouer</p>
+      </article>
+      <article class="choix">
+          <p>Choix adverse :</p>
+        <div id="choixadverse"><img src="images/icon-rock.svg" alt="imgchoixadverse"></div>
+      </article>
+      
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="brul">REGLES</p>
+  </footer>
+
+  
+  
+
+  
+ 
+  <script src="js/pop.js"></script>
+  <script src="js/game.js"></script>
+
+</body>
+
+
+
+</html>

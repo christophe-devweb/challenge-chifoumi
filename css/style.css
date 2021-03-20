@@ -1,0 +1,209 @@
+html{
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-size: cover;
+    color : white;
+    background-attachment: fixed;
+}
+
+header div {
+    border : 3px solid hsl(217, 16%, 45%);
+    width : 700px;
+    margin : 30px auto;
+    border-radius : 15px;
+    padding : 25px;
+    position: relative;
+}
+
+header table{
+    display: inline-block;
+    position: absolute;
+    right : 20px;
+    text-align: center;
+}
+
+header table td{
+    padding: 10px;
+}
+
+.game , .result {
+    background-image: url("../images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height : 490px;
+    width : 700px;
+    text-align: center;
+    margin : 0 auto;
+    position: relative;
+}
+
+.result {
+    background-image: none;
+    height : 250px;
+    padding-top: 100px;
+}
+
+.game div, .result div {
+    background-color: white;
+    height : 150px;
+    width : 150px;
+    border-radius: 50%;
+    box-shadow: inset 1px 10px #babfd3;
+    cursor: pointer;
+}
+
+.game img, .result img{
+    height : 80px;
+    margin-top: 30px;
+}
+
+.paper{
+    border : 20px solid #5571f8;
+    position: absolute;
+    left : 100px;
+    top : 20px;
+}
+
+.result .paper {
+    position: static;
+    display: inline-block;
+}
+  
+.scissors{
+    border : 20px solid #eba51f;
+    position: absolute;
+    right : 100px;
+    top : 20px;
+}
+
+.result .scissors {
+    position: static;
+    display: inline-block;
+}
+
+.rock{
+    border : 20px solid #df405e;
+    position: absolute;
+    left : 250px;
+    bottom : 50px;
+}
+
+.result .rock {
+    position: static;
+    display: inline-block;
+}
+
+.result article {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.result .choix {
+    margin: 0;
+}
+
+
+.brul {
+    border : 3px solid hsl(217, 16%, 45%);
+    border-radius : 10px;
+    width: 125px;
+    text-align: center;
+    cursor: pointer;
+    position : absolute ;
+    bottom : 0;
+    right : 30px;
+    padding-top : 5px;
+    padding-bottom : 5px;
+}
+
+.brul:hover {
+    background-color: #babfd3;
+}
+
+.regles {
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    height: 400px;
+    width : 400px;
+    background-color: #ffffff;
+    color : #3c415f;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+    margin-left : 20px;
+}
+
+.close {
+    cursor: pointer;
+    position : absolute;
+    top : 20px;
+    right : 20px;
+}
+
+.hide {
+    display : none;
+}
+
+.resultat {
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.reload {
+    cursor: pointer;
+    background-color: #fafafa;
+    color : #a13e53;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding : 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 750px) {
+
+    header div {
+        width : 80%;
+    }
+
+    footer {
+        margin-top : 30px;
+    }
+
+    .brul {
+        position : static ;
+        margin : 0 auto;
+    }
+
+    .result article {
+        display: block;
+    }
+
+    .game , .result {
+        background-image: none;
+        height : auto;
+        width : 80%;
+        position : static;
+        
+    }
+
+    .paper , .scissors, .rock{
+        margin : 10px auto;
+        position: static;
+    }
+   
+}
